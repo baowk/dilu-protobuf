@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+option go_package = "dilu-protobuf/pb/socketpb";
+
+enum MsgType{
+    HEART = 0;//心跳
+    LOGIN = 1;//登录
+    RESP = 2;//统一消息回执
+    NEW_NOTICE = 3;//新消息通知
+    RPA = 4;//rpa
+    RPA_PLAN = 5;//rpa计划
+}
+
+message Msg{
+    int32 msgType = 1;//消息类型
+    string reqId = 2;//请求id
+    int32 version = 3;//版本号（消息版本号） 1开始
+    bytes data = 4;//消息体
+}
