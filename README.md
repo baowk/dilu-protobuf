@@ -1,8 +1,8 @@
 # dilu-protobuf
 
 ## 目录结构
-```
-.
+
+```bash
 ├── README.md
 ├── sh # 脚本
 │   └── go_gen.sh # 自动生成protobuf文件
@@ -17,4 +17,4 @@
 │   └── socket # socket服务
 │       ├── dilu_protobuf.proto
 │       └── dilu_protobuf.pb.go
-
+```
